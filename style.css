@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    background-color: bisque;
+}
+
+.explanation {
+    width: 40vw;
+    font-size: 1.4rem;
+}
+
+header {
+    margin: 1.7rem;
+    padding: 1rem;
+    border: 3px double black;
+}
+
+.first-input,.second-input {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.1rem;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+input {
+    font-size: 1.5rem;
+    width: 3ch;
+    padding: .5rem;
+}
+
+input:focus {
+    outline: none;
+    border: 3px black solid;
+}
+
+.error {
+    border: 1px red solid;
+}
+
+.error:focus {
+    border: 3px red solid;
+}
+
+/* this is the css code to remove the spinner buttons from number inputs*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+button {
+    font-size: 1.2rem;
+    padding: .8rem;
+    margin: .5rem;
+}
+
+.output {
+    margin-top: .2rem;
+    font-size: 1.4rem;
+}
+
+.output p {
+    margin: .5rem;
+}

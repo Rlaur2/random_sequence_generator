@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sequence Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="rng.js" defer></script>
+</head>
+<body>
+    <header><h1>Random Sequence Generator</h1></header>
+    <div class="explanation">For the first number, enter how many different numbers to choose from. For the second number, choose how many of the previous number should be picked out. They will be picked and displayed in a random order. The numbers <span>not</span> chosen can be seen in the developer console. The maximum amount for either value is 999.</div>
+    <div class="first-input">
+        <label for="quantity">How many numbers to choose from?</label>
+        <!-- inline javascript to limit amount of numbers to three -->
+        <input type="number" name="quantity" id="quantity" min="1" max="999" maxlength="3" oninput="this.value=this.value.slice(0,this.maxLength)">
+    </div>
+    <div class="second-input">
+        <label for="picked">How many to be randomly picked?</label>
+        <input type="number" name="picked" id="picked" min="1" max="999" maxlength="3" oninput="this.value=this.value.slice(0,this.maxLength)">
+    </div>
+    <button>Generate</button>
+    <div class="output"></div>
+</body>
+</html>
